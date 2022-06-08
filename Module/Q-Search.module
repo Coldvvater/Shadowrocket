@@ -1,5 +1,14 @@
 #!name=Q-Search
-#!desc=Safari Search Add-ons, 特别鸣谢：@zZPiglet @Neurogram-R @Cuttlefish
+#!desc=Safari Search Add-ons
+
+##################################################################################################
+# - Safari 内输入 命令 + 空格 + 关键词 快速指定搜索引擎搜索
+# - 注：请先进入设置更改 Safari 默认搜索为 DuckDuckGO
+# 特别鸣谢：
+# @zZPiglet https://github.com/zZPiglet
+# @Neurogram-R https://github.com/Neurogram-R
+# @ddgksf2013 https://github.com/ddgksf2013
+##################################################################################################
 
 [Script]
 # dlc xxx (DeepL 译至中)
@@ -72,6 +81,9 @@ DeepLtoJapanese = type=http-request,pattern=^https:\/\/duckduckgo.com\/\?q=dlj(\
     
 # ph  xxx (PornHub)
 ^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ https://cn.pornhub.com/video/search?search=$1 302
+
+# ys xxx (cupfox)
+^https:\/\/duckduckgo.com\/\?q=ys\+([^&]+).+ https://cupfox.app/search?key=$1 302
 
 # so xxx (Stack Overflow)
 ^https:\/\/duckduckgo.com\/\?q=so(\+|%20)([^&]+).+ https://stackoverflow.com/search?q=$2 302
