@@ -1,7 +1,5 @@
 #!name=NoMoCam
 #!desc=NoMo Cam解锁Pro功能
-#!openUrl=https://github.com/Coldvvater/Shadowrocket/tree/master/Module
-#!author=@Coldvvater https://github.com/Coldvvater
 
 [Script]
 NoMoCam=type=http-request,pattern=^https?:\/\/nomo\.dafork\.com\/api\/.+,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/NoMoCamProCrack.js,script-update-interval=0
